@@ -22,8 +22,14 @@ public class GameStarWarsManager : MonoBehaviour
     {
         foreach (GameObject piso in pisosColapsables)
         {
-            yield return new WaitForSeconds(tiempoEntreColapso); 
-            piso.SetActive(false);
+            Debug.Log("Esperando para colapsar piso");
+
+            yield return new WaitForSeconds(tiempoEntreColapso);
+
+            Debug.Log("Colapsando: " + piso.name);
+
+            Rigidbody rb = piso.GetComponent<Rigidbody>();
+            rb.isKinematic = false;
         }
     }
 }
