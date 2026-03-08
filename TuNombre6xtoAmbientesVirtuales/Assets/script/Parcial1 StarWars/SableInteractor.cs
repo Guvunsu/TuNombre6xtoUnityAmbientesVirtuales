@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class SableInteractor : MonoBehaviour
 {
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Bala"))
+        if (col.gameObject.CompareTag("Bullet"))
         {
             Destroy(col.gameObject);
         }
