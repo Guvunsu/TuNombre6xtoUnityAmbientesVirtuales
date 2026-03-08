@@ -6,7 +6,7 @@ public class GameStarWarsManager : MonoBehaviour
     public GameObject[] pisosColapsables;
     public GameObject greenSable;
     public GameObject blueSable;
-    //public AudioSource alarma;
+    public AudioSource alarma;
     float tiempoEntreColapso = 9.10f;
     public void ActivarEventoFinal()
     {
@@ -15,18 +15,15 @@ public class GameStarWarsManager : MonoBehaviour
 
         greenSable.SetActive(true);
         blueSable.SetActive(true);
-        //alarma.Play();
+        alarma.Play();
         StartCoroutine(ColapsarPisos());
-    } 
+    }
     IEnumerator ColapsarPisos()
     {
         foreach (GameObject piso in pisosColapsables)
         {
-            Debug.Log("Esperando para colapsar piso");
-            yield return new WaitForSeconds(tiempoEntreColapso);
-            Debug.Log("Colapsando: " + piso.name);
-            Rigidbody rb = piso.GetComponent<Rigidbody>();
-            rb.isKinematic = false;
+            yield return new WaitForSeconds(tiempoEntreColapso); 
+            piso.SetActive(false);
         }
     }
 }
