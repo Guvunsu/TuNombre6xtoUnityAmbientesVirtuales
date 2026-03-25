@@ -8,6 +8,9 @@ TagManager:
   - RedSable
   - GreenSable
   - Floor
+  - Button
+  - Button2
+  - Door
   layers:
   - Default
   - TransparentFX
