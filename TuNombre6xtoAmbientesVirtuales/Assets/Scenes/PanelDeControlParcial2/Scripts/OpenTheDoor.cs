@@ -17,7 +17,7 @@ public class OpenTheDoor : MonoBehaviour
     {
         SetHingesActive(true);
         if (puerta != null)
-            puerta.enabled = true;
+            puerta.enabled = false;
     }
     void Update()
     {
@@ -43,7 +43,7 @@ public class OpenTheDoor : MonoBehaviour
         SetHingesActive(true);
 
         if (puerta != null)
-            puerta.enabled = false;
+            puerta.enabled = true;
 
         Debug.Log("Puerta liberada!");
     }

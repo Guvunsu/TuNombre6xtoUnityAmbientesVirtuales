@@ -8,7 +8,8 @@ public class XRButtonBridge : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player")) 
+        Debug.Log($"{gameObject.name} lo toque?");
+        if (collision.gameObject.CompareTag("Untagged"))
         {
             estaPresionado = true;
             Debug.Log($"{gameObject.name} presionado");
