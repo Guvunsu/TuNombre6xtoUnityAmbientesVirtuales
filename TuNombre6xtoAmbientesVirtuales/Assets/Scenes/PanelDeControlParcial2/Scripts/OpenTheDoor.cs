@@ -40,7 +40,7 @@ public class OpenTheDoor : MonoBehaviour
     void DoorLiberty()
     {
         puertaLiberada = false;
-        SetHingesActive(false);
+        SetHingesActive(true);
 
         if (puerta != null)
             puerta.enabled = false;

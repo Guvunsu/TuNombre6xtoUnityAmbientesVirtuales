@@ -1286,6 +1286,92 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ActionId: c3ca6ed7-3d25-44a2-b1d8-5be4eb699370
+--- !u!33 &378041642
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381397290}
+  m_Mesh: {fileID: 4300000, guid: 4dfd340ac24081a46939546c48b88123, type: 3}
+--- !u!23 &379140074
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381397290}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d2ad2d40b440e7048ab18f6cfebffb1b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &381397290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381433098}
+  - component: {fileID: 378041642}
+  - component: {fileID: 379140074}
+  m_Layer: 0
+  m_Name: ceiling-fan_PanelControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381433098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381397290}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -3.72, y: 3.217, z: 4.3646}
+  m_LocalScale: {x: 4.15541, y: 4.15541, z: 4.15541}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &382833454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1752,8 +1838,8 @@ Transform:
   m_GameObject: {fileID: 796892566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.637, y: 1.1381, z: 4.1397}
-  m_LocalScale: {x: 0.2689648, y: 1, z: 0.26913866}
+  m_LocalPosition: {x: -3.637, y: 1.1381, z: 4.025}
+  m_LocalScale: {x: 0.2689648, y: 1, z: 0.29207632}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2125,6 +2211,20 @@ Transform:
   - {fileID: 1130489464}
   m_Father: {fileID: 368792973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923594430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: XRI Right Interaction/Select Value
+  m_EditorClassIdentifier: 
+  m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_ActionId: 39bbf1ac-21a3-413d-90f6-6dbf6efeaabe
 --- !u!4 &931876017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6084154326807765640, guid: aba3da3a8e8b83e499eb11fbb38ba7e1, type: 3}
@@ -5188,6 +5288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (VR) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4790779649942916769, guid: aba3da3a8e8b83e499eb11fbb38ba7e1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5333300299909685701, guid: aba3da3a8e8b83e499eb11fbb38ba7e1, type: 3}
       propertyPath: m_Name
       value: Rigth_UI_DirectInteractor
@@ -5231,6 +5335,14 @@ PrefabInstance:
     - target: {fileID: 7026600000158512037, guid: aba3da3a8e8b83e499eb11fbb38ba7e1, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174643739554300949, guid: aba3da3a8e8b83e499eb11fbb38ba7e1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457885466869035006, guid: aba3da3a8e8b83e499eb11fbb38ba7e1, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7771105265244272972, guid: aba3da3a8e8b83e499eb11fbb38ba7e1, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
@@ -10030,7 +10142,7 @@ GameObject:
   - component: {fileID: 2304902797103773908}
   m_Layer: 0
   m_Name: PushButton_Roof_PanelControl
-  m_TagString: Untagged
+  m_TagString: Button5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10048,7 +10160,7 @@ GameObject:
   - component: {fileID: 2304902797079565101}
   m_Layer: 0
   m_Name: PushButton_Right_PanelControl
-  m_TagString: Untagged
+  m_TagString: Button2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10066,7 +10178,7 @@ GameObject:
   - component: {fileID: 2304902795953073683}
   m_Layer: 0
   m_Name: PushButton_Left_Wall_PanelControl
-  m_TagString: Untagged
+  m_TagString: Button3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10084,7 +10196,7 @@ GameObject:
   - component: {fileID: 2304902796057911114}
   m_Layer: 0
   m_Name: PushButton_Left_PanelControl
-  m_TagString: Untagged
+  m_TagString: Button1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10102,7 +10214,7 @@ GameObject:
   - component: {fileID: 2304902796521417809}
   m_Layer: 0
   m_Name: PushButton_Right_Wall_PanelControl
-  m_TagString: Untagged
+  m_TagString: Button4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14486,7 +14598,7 @@ GameObject:
   - component: {fileID: 8060122311461146334}
   m_Layer: 0
   m_Name: Remy_Human
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14555,7 +14667,7 @@ MonoBehaviour:
         m_Interactions: 
         m_SingletonActionBindings: []
         m_Flags: 0
-      m_Reference: {fileID: 0}
+      m_Reference: {fileID: 923594430}
 --- !u!114 &8060122311461146335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15558,6 +15670,7 @@ SceneRoots:
   - {fileID: 1813471328}
   - {fileID: 286823393}
   - {fileID: 1904535157}
+  - {fileID: 381433098}
   - {fileID: 8225168871528414963}
   - {fileID: 8225168871689990685}
   - {fileID: 2038713495}
