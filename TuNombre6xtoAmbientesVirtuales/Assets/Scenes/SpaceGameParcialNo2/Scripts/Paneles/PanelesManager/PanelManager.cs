@@ -29,6 +29,10 @@ public class PanelManager : MonoBehaviour
     {
         SceneManager.LoadScene("MenuScene");
     }
+    public void Loadgame()
+    {
+        SceneManager.LoadScene("SpaceGameParcialNo2");
+    }
     public void Restart()
     {
         SceneManager.LoadScene("SpaceGameParcialNo2");
