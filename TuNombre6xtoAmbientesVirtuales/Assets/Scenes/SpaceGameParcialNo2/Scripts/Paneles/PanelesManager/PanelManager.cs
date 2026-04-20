@@ -15,20 +15,20 @@ public class PanelManager : MonoBehaviour
     [SerializeField] GameObject panelWin;
     [SerializeField] GameObject panelLose;
     [SerializeField] GameObject panelOptions;
-    private PlayerInput playerInput;
+    public PlayerInput player;
     void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
+        player = GetComponent<PlayerInput>();
         gameFSM = GameStatefsm.PLAYING;
 
-        playerInput.actions["OpenOptions"].performed += ctx => OptionsPanel();
-        playerInput.actions["OpenWin"].performed += ctx => VictoryPanel();
-        playerInput.actions["OpenLose"].performed += ctx => LosePanel();
+        player.actions["OpenOptions"].performed += ctx => OptionsPanel();
+        player.actions["OpenWin"].performed += ctx => VictoryPanel();
+        player.actions["OpenLose"].performed += ctx => LosePanel();
     }
     public void LoadMenuPrincipal()
     {
         SceneManager.LoadScene("MenuScene");
-    }  
+    }
     public void Restart()
     {
         SceneManager.LoadScene("SpaceGameParcialNo2");
@@ -44,10 +44,14 @@ public class PanelManager : MonoBehaviour
         {
             return;
         }
-        gameFSM = GameStatefsm.OPTIONS;
-        panelOptions.SetActive(true);
-        panelWin.SetActive(false);
-        panelLose.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.M)&& gameFSM == GameStatefsm.PLAYING)
+        {
+
+            gameFSM = GameStatefsm.OPTIONS;
+            panelOptions.SetActive(true);
+            panelWin.SetActive(false);
+            panelLose.SetActive(false);
+        }
     }
     public void VictoryPanel()
     {

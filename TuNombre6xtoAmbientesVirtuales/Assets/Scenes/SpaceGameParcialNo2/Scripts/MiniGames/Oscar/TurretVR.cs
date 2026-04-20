@@ -49,7 +49,7 @@ public class TurretVR : MonoBehaviour
                 RaycastHit _hit;
                 if(Physics.Raycast(ray, out _hit))
                 {
-                    if (_hit.collider.CompareTag("Meteor"))
+                    if (_hit.collider.CompareTag("Earth"))
                     {
                         hasMeteorPos = true;
                         turretDirection = _hit.transform.position - turret.position;
