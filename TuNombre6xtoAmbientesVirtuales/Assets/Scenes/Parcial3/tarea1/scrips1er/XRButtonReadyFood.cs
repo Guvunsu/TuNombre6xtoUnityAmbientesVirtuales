@@ -4,11 +4,15 @@ public class XRButtonReadyFood : MonoBehaviour
 {
     public enum FoodState
     {
-        Tortilla,
-        Frijoles,
-        Carne,
-        Vegetales,
-        Completa
+        TORTILLAS,
+        FRIJOLES,
+        CARNE,
+        QUESILLO,
+        CEBOLLA,
+        TOMNATE,
+        SALSAROJA,
+        AGUACATE,
+        COMPLETA
     }
 
     [Header("Estado Actual")]
@@ -52,7 +56,7 @@ public class XRButtonReadyFood : MonoBehaviour
         {
             currentIndex = foodStages.Length - 1;
 
-            currentState = FoodState.Completa;
+            currentState = FoodState.COMPLETA;
 
             ActivateFinalEffects();
 
