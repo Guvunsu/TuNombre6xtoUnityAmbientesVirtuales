@@ -33,7 +33,21 @@ public class XRDeliveryFood : MonoBehaviour
 
     void Update()
     {
-        ChechkPoint();
+        if (!canDeliver || delivered)
+            return;
+
+        if (foodObject == null || deliveryPoint == null)
+            return;
+
+        float distance = Vector3.Distance(
+            foodObject.transform.position,
+            deliveryPoint.position
+        );
+
+        if (distance <= deliveryDistance)
+        {
+            DeliverFood();
+        }
     }
 
     void DeliverFood()
@@ -54,25 +68,6 @@ public class XRDeliveryFood : MonoBehaviour
         if (foodObject != null)
         {
             foodObject.SetActive(false);
-        }
-    }
-
-    void ChechkPoint()
-    {
-        if (!canDeliver || delivered)
-            return;
-
-        if (foodObject == null || deliveryPoint == null)
-            return;
-
-        float distance = Vector3.Distance(
-            foodObject.transform.position,
-            deliveryPoint.position
-        );
-
-        if (distance <= deliveryDistance)
-        {
-            DeliverFood();
         }
     }
 }
