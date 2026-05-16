@@ -43,7 +43,6 @@ public class OvenStateController : MonoBehaviour
     float stateTimer = 0f;
     Coroutine modeCoroutine;
 
-    // Eventos opcionales para conectar desde inspector
     public UnityEvent OnEnterBaking;
     public UnityEvent OnEnterAlert;
     public UnityEvent OnEnterBurned;
